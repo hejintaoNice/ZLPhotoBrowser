@@ -392,7 +392,7 @@ public class ZLPhotoPreviewSheet: UIView {
     private func showNoAuthorityAlert() {
         let alert = UIAlertController(title: nil, message: String(format: localLanguageTextValue(.noPhotoLibratyAuthority), getAppName()), preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: localLanguageTextValue(.cancel), style: .cancel) { _ in
+        let cancelAction = UIAlertAction(title: localLanguageTextValue(.cancel), style: .destructive) { _ in
                     
                 }
                 alert.addAction(cancelAction)

@@ -577,7 +577,7 @@ open class ZLCustomCamera: UIViewController, CAAnimationDelegate {
     private func showAlertAndDismissAfterDoneAction(message: String, type: ZLNoAuthorityType?) {
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         
-        let cancelAction = UIAlertAction(title: localLanguageTextValue(.cancel), style: .cancel) { _ in
+        let cancelAction = UIAlertAction(title: localLanguageTextValue(.cancel), style: .destructive) { _ in
                     
                 }
                 alert.addAction(cancelAction)
