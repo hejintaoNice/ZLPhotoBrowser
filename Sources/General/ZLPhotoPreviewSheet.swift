@@ -391,6 +391,12 @@ public class ZLPhotoPreviewSheet: UIView {
     
     private func showNoAuthorityAlert() {
         let alert = UIAlertController(title: nil, message: String(format: localLanguageTextValue(.noPhotoLibratyAuthority), getAppName()), preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: localLanguageTextValue(.cancel), style: .cancel) { _ in
+                    
+                }
+                alert.addAction(cancelAction)
+        
         let action = UIAlertAction(title: localLanguageTextValue(.ok), style: .default) { _ in
             ZLPhotoConfiguration.default().noAuthorityCallback?(.library)
         }
